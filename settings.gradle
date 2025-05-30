@@ -1,3 +1,11 @@
+pluginManagement {
+//    includeBuild '../besu-plugin-gradle-plugin'
+  repositories {
+    gradlePluginPortal()
+    mavenLocal()
+  }
+}
+
 rootProject.name = 'linea'
 // please keep deps sorted by group and alphabetically
 include 'jvm-libs:generic:serialization:jackson'
